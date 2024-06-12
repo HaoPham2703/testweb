@@ -431,6 +431,7 @@ body {
     .slider .carousel-inner {
         display: flex;
     }
+
 }
 
 @media (max-width: 767px) {
@@ -456,6 +457,13 @@ body {
 
     .slider .carousel-inner {
         display: flex;
+    }
+
+    .slider .carousel-control-prev,
+    .slider .carousel-control-next {
+        
+        display: none;
+        /* Smooth transition for hover effect */
     }
 }
 
@@ -570,7 +578,7 @@ body {
 
 .button-group button {
     font-size: 23px;
-    
+
 }
 
 .part1 {
@@ -589,32 +597,37 @@ body {
 
 @media (max-width: 1199px) {
     .mb-lg-0 {
-      font-size: 1.9rem;
-      /* điều chỉnh kích thước font khi màn hình nhỏ */
+        font-size: 1.9rem;
+        /* điều chỉnh kích thước font khi màn hình nhỏ */
     }
-    .button-group button{
+
+    .button-group button {
         font-size: 18px;
     }
-    .mb-3 .mb-lg-0{
+
+    .mb-3 .mb-lg-0 {
         padding-bottom: 1px;
     }
-  }
+}
 
-  .mb-3 .mb-lg-0{
-    font-weight: 589; margin-top: 12px;padding-bottom: 10px;
-  }
+.mb-3 .mb-lg-0 {
+    font-weight: 589;
+    margin-top: 12px;
+    padding-bottom: 10px;
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .mb-lg-0 {
         font-size: 1.5rem;
-        
+
         /* điều chỉnh kích thước font khi màn hình nhỏ */
-      }
-    .button-group button{
+    }
+
+    .button-group button {
         font-size: 12px;
     }
-    
-    .mb-3 .mb-lg-0{
+
+    .mb-3 .mb-lg-0 {
         padding-bottom: 1px;
     }
-  }
+}
