@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.navbar-contact {
+    margin-left: 2%;
+}
+
+
+/* Custom CSS for Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar-logo {
+        padding-right: 0;
+    }
+
+    .navbar-search {
+        width: 100%;
+
+    }
+
+    .lienhebtn,
+    .navbar-logo span,
+    .navbar-cart {
+        display: none;
+
+    }
+
+    .navbar-account {
+
+        margin-left: 2%;
+        /* Điều chỉnh kích thước văn bản của h6 */
+    }
+
+    .navbar-account h6 {
+        font-size: 14px;
+        /* Điều chỉnh kích thước văn bản của h6 */
+    }
+
+    .navbar-contact .btn {
+        padding: 5px 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-logo {
+        padding-right: 0;
+    }
+
+    .navbar-search {
+        width: 100%;
+
+    }
+
+    .navbar-contact {
+        display: none;
+    }
+
+    .navbar-cart {
+        margin-right: 6%;
+    }
+
+    .navbar-contact .btn {
+        padding: 5px 10px;
+    }
+
+    .navbar-account .acc_btn .custom-btn {
+        background-color: rgba(69, 75, 81, 0.08);
+        /* Màu nền với độ mờ */
+        color: #f2f2f2;
+        /* Màu chữ */
+        border: none;
+        /* Loại bỏ viền */
+        padding: 2% 15px;
+        /* Điều chỉnh padding nếu cần */
+        border-radius: 5px;
+        /* Góc bo tròn */
+        transition: background-color 0.3s ease;
+        /* Hiệu ứng mượt mà khi rê chuột */
+        height: 2%;
+        /* Điều chỉnh chiều cao nút */
+    }
+
+    .navbar-account .acc_btn .custom-btn i {
+        font-size: 80%;
+    }
+
+    .navbar-account .acc_btn .custom-btn h6 {
+        font-size: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-logo {
+        padding-right: 2%;
+    }
+
+    /* Điều chỉnh cách đều giữa các cấp trong phần navbar */
+
+    .navbar-search {
+        width: 100%;
+    }
+
+    /* Điều chỉnh cách đều giữa các cấp trong phần navbar */
+
+    .navbar-contact,
+    .navbar-cart,
+    .navbar-account {
+        display: flex;
+        margin-right: 2%;
+    }
+
+    .navbar-contact .btn {
+        padding: 5px 10px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .navbar-contact,
+    .lienhebtn {
+        display: none;
+    }
+
+    .navbar-search {
+        width: 1000px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Điều chỉnh kích thước màn hình nhỏ */
+    .willhidden {
+        display: none;
+    }
+
+    /* Sử dụng Flexbox để căn các phần tử trong hàng */
+    .announcement-bar .row {
+        display: flex;
+        justify-content: space-between;
+        /* Các phần tử sẽ được căn cách xa nhau một cách đều */
+    }
+
+    /* Điều chỉnh cách đều giữa các cột trong phần announcement-bar */
+    .announcement-bar .row>div {
+        flex: 1;
+        /* Phần tử sẽ mở rộng ra để chiếm hết không gian trong hàng */
+        padding: 0;
+        /* Xóa padding */
+        margin: 6;
+        /* Xóa margin */
+    }
+
+}
+
+@media only screen and (max-width: 385px) {
+
+    /* Điều chỉnh kích thước màn hình nhỏ */
+    .willhidden2 {
+        display: none;
+    }
+
+    /* Sử dụng Flexbox để căn các phần tử trong hàng */
+    .announcement-bar .row {
+        display: flex;
+        justify-content: space-between;
+        /* Các phần tử sẽ được căn cách xa nhau một cách đều */
+    }
+
+    /* Điều chỉnh cách đều giữa các cột trong phần announcement-bar */
+    .announcement-bar .row>div {
+        flex: 1;
+        /* Phần tử sẽ mở rộng ra để chiếm hết không gian trong hàng */
+        padding: 0;
+        /* Xóa padding */
+        margin: 6;
+        /* Xóa margin */
+    }
+
+    /*  */
+    .navbar-account .acc_btn .custom-btn i {
+        font-size: 70%;
+    }
+
+    .navbar-account .acc_btn .custom-btn h6 {
+        font-size: 60%;
+    }
+
+}
+
+.custom-btn {
+    background-color: rgba(69, 75, 81, 0.08);
+    /* Màu nền với độ mờ */
+    color: #f2f2f2;
+    /* Màu chữ */
+    border: none;
+    /* Loại bỏ viền */
+    padding: 4% 20px;
+    /* Điều chỉnh padding nếu cần */
+    border-radius: 5px;
+    /* Góc bo tròn */
+    transition: background-color 0.3s ease;
+    /* Hiệu ứng mượt mà khi rê chuột */
+    height: 60px;
+    /* Điều chỉnh chiều cao nút */
+}
+
+
+.custom-btn:hover {
+    background-color: #5a6268;
+    color: white;
+    /* Background color on hover */
+}
+
+/*  */
+.announcement-bar {
+    background-color: #e9efff;
+    color: #fff;
+    text-align: center;
+
+}
+
+/* CSS cho homepage */
+.homepage table {
+    width: 100%;
+}
+
+.homepage th {
+    display: none;
+}
+
+.homepage-banner div {
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+/* CSS cho homepage-banner */
+
+
+/* CSS cho các carousel control */
+.carousel-control-prev,
+.carousel-control-next {
+    color: #000000;
+    /* Màu sắc cho các nút điều khiển */
+    width: 5%;
+
+    /* Độ rộng của nút điều khiển */
+
+    /* Màu nền */
+}
+
+
+
+
+
+
+
+/* CSS cho các slider image */
+.slider-image {
+    width: 100%;
+    /* Kích thước hình ảnh */
+    height: auto;
+    /* Chiều cao tự động */
+    border-radius: 7px;
+    /* Bo Viền Cong */
+}
+
+/* CSS cho các div khác */
+
+.best-sellers,
+.tag-product {
+    margin-bottom: 16px;
+    padding: 16px;
+    border: 1px solid #000000;
+    background-color: #fafafa;
+    border-radius: 7px;
+}
+
+.sale-product {
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: 1px solid #000000;
+}
+
+
+.sale-product img {
+    width: 459px;
+    height: 60px;
+}
+
+/* CSS cho countdown */
+
+.countdown {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.countdown span {
+    margin: 0 5px;
+}
+
+.countdown span:last-child::after {
+    content: '';
+}
+
+.ketthucsau {
+
+    font-size: 21px;
+    font-weight: 391;
+    font-style: normal;
+}
+
+.custom-prev,
+.custom-next {
+    background-color: black;
+    /* Màu đen */
+    /* Thêm các thuộc tính CSS khác nếu cần thiết */
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background-color: darkgray;
+    /* Màu hover */
+    /* Thêm các thuộc tính CSS khác nếu cần thiết */
+}
+
+
+/* CSS cho slider Product sale */
+
+.slider .carousel-inner {
+    padding: 1em;
+}
+
+.slider .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.slider .card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 50%;
+    height: auto;
+}
+
+.slider .about-product h4,
+.slider .about-product h6 {
+    margin: 0;
+}
+
+.slider .about-product h4 {
+    font-size: 20px;
+}
+
+.slider .stats {
+    margin-top: 15px;
+}
+
+.slider .stats .p-price {
+    font-size: 1rem;
+}
+
+.slider .total {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.slider .total span:last-child {
+    color: #28a745;
+}
+
+.slider .product__price--percent {
+    background-color: #ff4757;
+    color: white;
+    font-weight: bold;
+    padding: 3px 1px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    width: 74px;
+    font-size: 12px;
+}
+
+.slider .custom-card-width {
+    max-width: 285px;
+    /* Đặt kích thước tối đa cho thẻ card */
+}
+
+
+
+
+.slider .carousel-control-prev,
+.slider .carousel-control-next {
+    background-color: #cc1919;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.7s ease;
+    /* Smooth transition for hover effect */
+}
+
+.slider .carousel-control-prev:hover,
+.slider .carousel-control-next:hover {
+    background-color: #b31b1b;
+    /* Darker shade for hover effect */
+}
+
+@media (min-width: 768px) {
+    .slider .carousel-item {
+        margin-right: 0;
+        flex: 0 0 calc(100%/4);
+        display: block;
+    }
+
+    .slider .carousel-inner {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider .card .img-wrapper {
+        height: 17em;
+    }
+
+    .slider .stats .p-price {
+        font-size: 1.2rem;
+        /* Reduce font size for smaller screens */
+    }
+
+    .slider .total {
+        font-size: 1rem;
+        /* Reduce font size for smaller screens */
+    }
+
+    .slider .carousel-item {
+        margin-right: 0;
+        flex: 0 0 50%;
+        display: block;
+    }
+
+    .slider .carousel-inner {
+        display: flex;
+    }
+}
+
+@media (max-width: 530px) {
+    .slider .card .img-wrapper {
+        height: 17em;
+    }
+
+    .slider .custom-card-width {
+        max-width: 230px;
+        /* Đặt kích thước tối đa cho thẻ card */
+    }
+
+    .slider .stats .p-price {
+        font-size: 0.8rem;
+
+        /* Reduce font size for smaller screens */
+    }
+
+    .slider .total {
+        font-size: 1rem;
+        /* Reduce font size for smaller screens */
+    }
+
+    .slider .carousel-item {
+        margin-right: 0;
+        flex: 0 0 2%;
+        display: block;
+    }
+
+    .slider .carousel-inner {
+        display: flex;
+    }
+}
+
+@media (min-width: 767px) {
+    .slider .card .img-wrapper {
+        height: 17em;
+    }
+
+    .slider .stats .p-price {
+        font-size: 1rem;
+        /* Reduce font size for smaller screens */
+    }
+
+    .slider .total {
+        font-size: 1rem;
+        /* Reduce font size for smaller screens */
+    }
+}
+
+
+
+@media only screen and (max-width: 989px) {
+
+    .slider .stats .p-price {
+        font-size: 0.87rem;
+        /* Reduce font size for smaller screens */
+    }
+
+    .slider .total {
+        font-size: 0.85rem;
+        /* Reduce font size for smaller screens */
+    }
+}
+
+
+.slider .stats .p-price {
+
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+}
+
+.slider .total {
+    white-space: nowrap;
+}
+
+/* CSS cho link hover card */
+.card-link {
+    text-decoration: none;
+    /* Remove underline from link */
+    color: inherit;
+    /* Inherit color from parent elements */
+    display: block;
+    /* Make the link a block element */
+}
+
+.card-link .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.card-link:hover .card {
+    transform: scale(1.05);
+    /* Slightly enlarge the card on hover */
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    /* Add a deeper shadow on hover */
+}
+
+/* /Code thêm size khi thu nhỏ các card */
+
+/* CSS KHU VỰC BEST SELLER */
+
+
+/**------------------------------------------------------------------------
+ *                           todo: khu vực best seller, tag.
+ *------------------------------------------------------------------------**/
+
+/**--------------------------------------------
+ *               Nút button: điện thoại nổi bật nhất
+ *---------------------------------------------**/
+
+.button-group button {
+    font-size: 23px;
+    
+}
+
+.part1 {
+    padding-bottom: 1%;
+}
+
+.part1>h3 {
+    margin-top: px;
+}
+
+@media (max-width: 1200px) {
+    .hide-on-small {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .mb-lg-0 {
+      font-size: 1.9rem;
+      /* điều chỉnh kích thước font khi màn hình nhỏ */
+    }
+    .button-group button{
+        font-size: 18px;
+    }
+    .mb-3 .mb-lg-0{
+        padding-bottom: 1px;
+    }
+  }
+
+  .mb-3 .mb-lg-0{
+    font-weight: 589; margin-top: 12px;padding-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .mb-lg-0 {
+        font-size: 1.5rem;
+        
+        /* điều chỉnh kích thước font khi màn hình nhỏ */
+      }
+    .button-group button{
+        font-size: 12px;
+    }
+    
+    .mb-3 .mb-lg-0{
+        padding-bottom: 1px;
+    }
+  }
